@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גלריית פרויקטים של תלמידים</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .intro {
+            text-align: right;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            transition: transform 0.5s;
+        }
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+        .project-info {
+            padding: 1.5rem;
+        }
+        .project-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #6e48aa;
+        }
+        .project-description {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        .project-link {
+            display: inline-block;
+            background-color: #9d50bb;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        .project-link:hover {
+            background-color: #6e48aa;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>גלריית פרויקטים של תלמידים</h1>
+        <p class="subtitle">יצירות ואפליקציות לימודיות בפיתוח עם Claude</p>
+    </header>
+        <div class="intro">
+           <p>
+
+             במסגרת שיעור טכנולוגיה בכיתה ט11, העברתי לתלמידים סדנא מעשית בפיתוח אפליקציות לימודיות בעזרת בינה מלאכותית יוצרת. 
+             במהלך השיעור למדו התלמידים איך ניתן להיעזר בכלי בינה מלאכותית על מנת לתכנן ולבנות אפליקציה לימודית בכל נושא. 
+             השיעור כלל התנסות מעשית במהלכה כל תלמיד בחר נושא לימודי, תכנן אתר או אפליקציה לימודית ונעזר במנוע הבינה המלאכותית Claude על לבנות את האפליקציה
+             <br><br>
+             באתר זה מוצגים תוצרי התלמידים כפי שהיו כבר בסיום שעה אחת של עבודה.
+          </p>
+        </div>
+
+    <div class="container">
+
+        <div class="projects">
+
+            <div class="project-card">
+                <div class="project-image">
+                  <a href="https://claude.ai/public/artifacts/83cf6a02-28eb-4ee1-9702-0b448cd6c1a4" class="project-link" target="_blank"> <img src="https://cdn.glitch.global/ec05a94c-5207-49e6-a586-25e3ff7ae3cb/8aa77793-010e-40b7-9352-fc55ac3d8302.image.png?v=1747824562592" alt="גלה את הצבע" style="background: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 320&quot;><rect width=&quot;400&quot; height=&quot;320&quot; fill=&quot;white&quot;/><text x=&quot;200&quot; y=&quot;160&quot; font-family=&quot;Arial&quot; font-size=&quot;40&quot; fill=&quot;purple&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>BROWN</text></svg>'); background-size: cover;"> </a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">תרגול שם המספר</h3>
+                    <p class="project-description">אתר ללימוד, שינון ותרגול של כללי שם המספר בעברית</p>
+                    <a href="https://claude.ai/public/artifacts/83cf6a02-28eb-4ee1-9702-0b448cd6c1a4" class="project-link" target="_blank">לצפייה בפרויקט</a>
+                </div>
+            </div>
+          
+            <div class="project-card">
+                <div class="project-image">
+                  <a href="https://claude.ai/public/artifacts/a6a9cbd5-94ff-4d21-8183-b9aa6c2d3392?authuser=0" class="project-link" target="_blank"> <img src="https://cdn.glitch.global/ec05a94c-5207-49e6-a586-25e3ff7ae3cb/1.png?v=1747580789728" alt="גלה את הצבע" style="background: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 320&quot;><rect width=&quot;400&quot; height=&quot;320&quot; fill=&quot;white&quot;/><text x=&quot;200&quot; y=&quot;160&quot; font-family=&quot;Arial&quot; font-size=&quot;40&quot; fill=&quot;purple&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>BROWN</text></svg>'); background-size: cover;"> </a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">גלה את הצבע</h3>
+                    <p class="project-description">מבחן פסיכולוגי שבוחן את ההבדלה בין שם הצבע לצבע הטקסט.</p>
+                    <a href="https://claude.ai/public/artifacts/a6a9cbd5-94ff-4d21-8183-b9aa6c2d3392?authuser=0" class="project-link" target="_blank">לצפייה בפרויקט</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                  <a href="https://claude.ai/public/artifacts/b01babfc-6337-4dc4-bc8e-8905a54616e1?authuser=0" class="project-link" target="_blank"> <img src="https://cdn.glitch.global/ec05a94c-5207-49e6-a586-25e3ff7ae3cb/2.png?v=1747580795383" alt="תרגול פיסיקה" style="background: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 320&quot;><rect width=&quot;400&quot; height=&quot;320&quot; fill=&quot;white&quot;/><text x=&quot;200&quot; y=&quot;120&quot; font-family=&quot;Arial&quot; font-size=&quot;30&quot; fill=&quot;black&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>שאלות פיזיקה</text><line x1=&quot;80&quot; y1=&quot;150&quot; x2=&quot;320&quot; y2=&quot;150&quot; stroke=&quot;#3498db&quot; stroke-width=&quot;10&quot;/></svg>'); background-size: cover;"> </a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">תרגול פיסיקה</h3>
+                    <p class="project-description">אתר המאפשר תרגול שאלות במגוון נושאים בפיסיקה.</p>
+                    <a href="https://claude.ai/public/artifacts/b01babfc-6337-4dc4-bc8e-8905a54616e1?authuser=0" class="project-link" target="_blank">לצפייה בפרויקט</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                  <a href="https://claude.ai/public/artifacts/74b77836-4063-420c-81ec-48bf8fdedefb?authuser=0" class="project-link" target="_blank"> <img src="https://cdn.glitch.global/ec05a94c-5207-49e6-a586-25e3ff7ae3cb/3.png?v=1747580800847" alt="סיפורי התנך" style="background: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 320&quot;><rect width=&quot;400&quot; height=&quot;320&quot; fill=&quot;#e8e0ca&quot;/><rect x=&quot;60&quot; y=&quot;60&quot; width=&quot;280&quot; height=&quot;200&quot; fill=&quot;#556b2f&quot;/><text x=&quot;200&quot; y=&quot;140&quot; font-family=&quot;Arial&quot; font-size=&quot;26&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>השלם את הסיפור התנ&quot;כי</text></svg>'); background-size: cover;"> </a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">סיפורי התנך</h3>
+                    <p class="project-description">אתר אינטראקטיבי לתרגול ידע על סיפורי התנך.</p>
+                    <a href="https://claude.ai/public/artifacts/74b77836-4063-420c-81ec-48bf8fdedefb?authuser=0" class="project-link" target="_blank">לצפייה בפרויקט</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://cdn.glitch.global/ec05a94c-5207-49e6-a586-25e3ff7ae3cb/4.png?v=1747580883024" alt="זהה את השחקן" style="background: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 320&quot;><rect width=&quot;400&quot; height=&quot;320&quot; fill=&quot;#1e3144&quot;/><rect x=&quot;40&quot; y=&quot;80&quot; width=&quot;320&quot; height=&quot;160&quot; fill=&quot;white&quot; rx=&quot;10&quot;/><text x=&quot;200&quot; y=&quot;140&quot; font-family=&quot;Arial&quot; font-size=&quot;24&quot; fill=&quot;#1e3144&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>Club Match</text><text x=&quot;200&quot; y=&quot;180&quot; font-family=&quot;Arial&quot; font-size=&quot;22&quot; fill=&quot;#1e3144&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>נחש את הקבוצה</text></svg>'); background-size: cover;">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">זהה את השחקן</h3>
+                    <p class="project-description">שאלון אינטראקטיבי לבדיקת ידע על שחקני כדורגל.</p>
+                    <a href="https://nutritious-fancy-jackal.glitch.me/?authuser=0" class="project-link" target="_blank">לצפייה בפרויקט</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://cdn.glitch.global/ec05a94c-5207-49e6-a586-25e3ff7ae3cb/5.png?v=1747580885493" alt="אוצר מילים בערבית" style="background: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 320&quot;><rect width=&quot;400&quot; height=&quot;320&quot; fill=&quot;white&quot;/><text x=&quot;200&quot; y=&quot;140&quot; font-family=&quot;Arial&quot; font-size=&quot;30&quot; fill=&quot;black&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>מה המשמעות של המילה הבאה?</text><text x=&quot;200&quot; y=&quot;200&quot; font-family=&quot;Arial&quot; font-size=&quot;40&quot; fill=&quot;black&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>باب</text></svg>'); background-size: cover;">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">אוצר מילים בערבית</h3>
+                    <p class="project-description">אתר אינטראקטיבי לתרגול ולמידת אוצר מילים בשפה הערבית.</p>
+                    <a href="https://claude.ai/public/artifacts/a7bb92e2-99ac-4ffa-b819-4ec4857c7c56" class="project-link" target="_blank">לצפייה בפרויקט</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://cdn.glitch.global/ec05a94c-5207-49e6-a586-25e3ff7ae3cb/6.png?v=1747580874444" alt="חקירת פונקציות" style="background: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 320&quot;><rect width=&quot;400&quot; height=&quot;320&quot; fill=&quot;white&quot;/><text x=&quot;200&quot; y=&quot;60&quot; font-family=&quot;Arial&quot; font-size=&quot;24&quot; fill=&quot;black&quot; text-anchor=&quot;middle&quot;>Function Matching Game</text><line x1=&quot;100&quot; y1=&quot;160&quot; x2=&quot;300&quot; y2=&quot;160&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot;/><line x1=&quot;200&quot; y1=&quot;80&quot; x2=&quot;200&quot; y2=&quot;240&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot;/><polyline points=&quot;120,220 280,100&quot; stroke=&quot;blue&quot; stroke-width=&quot;2&quot; fill=&quot;none&quot;/></svg>'); background-size: cover;">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">חקירת פונקציות</h3>
+                    <p class="project-description">אתר לתרגול זיהוי וחקירה של פונקציות מתמטיות.</p>
+                    <a href="https://claude.ai/public/artifacts/5c55920f-5f98-47ab-b00a-45b48c2a2a30" class="project-link" target="_blank">לצפייה בפרויקט</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 גלריית הפרויקטים של התלמידים | כל הפרויקטים פותחו בעזרת Claude</p>
+    </footer>
+</body>
+</html>
